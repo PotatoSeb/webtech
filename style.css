@@ -1,0 +1,266 @@
+/* Asterisk all*/
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+/* body */
+body {font-family: 'Roboto', sans-serif;
+overflow-x: hidden;}
+
+html, body {height: 100;}
+
+/*for coloring later*/
+:root {--main-color: #E14D2A;
+--secondary-color: #FD841F;
+--third-color: #CB997E;
+--fourth-color: #A5A58D;
+--fifth-color: #E9DD8A;
+--sixth-color: #EBD6D7;
+--seventh-color: #DEF5E5;
+--eight-color: #BCEAD5;
+--ninth-color: #9ED5C5;
+--ten-color: #8EC3B0;
+--eleventh-color: #8D9EFF;
+--twelveth-color: #A3C7D6;}
+
+
+/* fonts */
+@font-face {font-family: "Komoda";
+src: url(./fonts/Komoda.otf);}
+
+@font-face {
+    font-family: "Kirvy Bold";
+    src: url("./fonts/Kirvy-Bold.otf");}
+
+@font-face {
+    font-family: "Kirvy Light";
+    src: url("./fonts/Kirvy-Light.otf");}
+
+@font-face {
+    font-family: "Kirvy Regular";
+    src: url("./fonts/Kirvy-Regular.otf");}
+
+@font-face {
+    font-family: "Kirvy Thin";
+    src: url("./fonts/Kirvy-Thin.otf");}
+
+/*sections*/
+section {padding: 5%;}
+
+/*head*/
+h2 {font-size: 2.5rem;
+line-height: 125%;
+padding: 1rem 0rem;}
+
+h3 {font-size: 1.25rem;
+line-height: 125%;}
+
+/*navigation*/
+nav {display: flex;
+align-items: center;
+justify-content: space-between;} 
+
+nav svg {cursor: pointer;
+z-index: 10;}
+
+/*link*/
+.links {position:absolute;
+background: #8EC3B0;
+width: 100%;
+height: 100vh;
+left: 0;
+top: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+color: black;
+transform: translateX(100%);}
+
+
+.links a {color: var(--fifth-color);
+font-size: 3rem;
+text-decoration: none;}
+
+
+/*logo*/
+.logo {display: flex;
+align-items: center;}
+
+.logo h1 {margin-left: 1rem;
+font-family: "Kirvy Bold";
+text-shadow: 0px 4px 12px black;
+font-size: 1.5rem;}
+
+.logo img {width: 6.5rem;}
+
+.front-page {min-height: 100vh;
+color: white;}
+
+/*intro*/
+.intro {margin-top:  25vh;
+font-family: "Kirvy Bold";
+text-shadow: 0px 4px 12px black;
+text-align: center;}
+
+.intro h3 {font-family: "Kirvy Thin";
+text-shadow: 0px 4px 12px black;}
+
+/* about us*/
+
+.us {margin-top:  25vh;
+    font-family: "Kirvy Bold";
+    text-shadow: 0px 4px 12px black;
+    text-align: center;}
+
+.us h4 {margin-top:  20vh;
+font-size: 2rem;
+color: #E6B325;}
+
+/*button*/
+.buttons {margin-top: 2rem;}
+
+.buttons a {border: none;
+border-radius: 0.5rem;
+box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.253);
+margin: 1rem;
+text-decoration: none;}
+
+.button-prim {background-color: var(--main-color);
+color: white;
+padding: 1rem;
+font-size: 1rem;}
+
+.button-learn {background-color: var(--secondary-color);
+color: white;
+padding: 1rem;
+font-size: 1rem;}
+
+/* homepage image*/
+.home {position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+z-index: -1;}
+
+/*videos*/
+.hardwares {color: var(--secondary-color);
+text-align: center;
+font-family: "Kirvy Bold";}
+
+.videos video {width: 100%;
+border-radius: 1rem;
+margin-top: 1rem;}
+
+.cpu,.gpu,.peripherals {position: relative;}
+    
+.videos h3 {position:absolute;
+color: var(--main-color);
+text-shadow: 0px 4px 12px black;
+bottom: 10%;
+left: 50%;
+transform: translate(-50%, -10%);}
+
+/*about*/
+.about {color: var(--secondary-color)}
+
+.about h2 {font-family: "Kirvy Bold";}
+
+.about p {line-height: 150%;
+font-size: 1.2rem;}
+
+.about img {width: 100%;
+margin-top: 2rem;}
+
+/*extra*/
+body{padding:10;}
+
+.videos {display: flex;
+gap: 2rem;}
+
+.about{display: flex;
+gap: 5rem;
+justify-content: space-between;}
+
+.about img {width: 50%;}
+
+.about h2 {text-align: start;}
+
+/* tables */
+
+*{box-sizing: border-box;}
+
+.content-table {
+    border-collapse: collapse;
+    margin: -30px 0;
+    font-size: 1rem;
+    font-family: "Kirvy Bold";
+    min-width: 400px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #5DA7DB;
+    color: #ffffff;
+    text-align: middle;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 23px 27px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #EFF5F5;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFF7E9;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #256D85;
+}
+
+.tablefonts{font-size: 2rem;}
+
+.picpic {width: 20rem;
+height: 15rem;}
+
+/*peritables*/
+.pericss {margin-top:  25vh;
+    font-family: "Kirvy Bold";
+    text-align: center;}
+    
+    .pericss h4 {font-family: "Kirvy Thin";
+    font-size: 5rem;
+    color: #256D85;}
+
+/* footer*/
+footer {background: #FCECDD;
+    text-align: center;
+    font-family: "Saudagar";
+     border-radius: 10px;
+     color: #E6B325;
+     opacity: 0.8;}
+
+.footerpic {width: 10rem;
+    height: 10rem;}
+
+footer h5 {font-size: 3rem;}
+
+
+
+
+
+

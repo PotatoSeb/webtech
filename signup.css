@@ -1,0 +1,58 @@
+/* fonts */
+@font-face {
+    font-family: "Kirvy Bold";
+    src: url("./fonts/Kirvy-Bold.otf");}
+
+/* for sign up css*/
+
+body {margin: 0;
+padding: 0;
+font-family: "Kirvy Bold";
+background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/homepage.png);
+background-size: cover;
+background-position: center;}
+
+.sign-up-form {width: 300px;
+box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+background: #fff;
+padding: 20px;
+margin: 8% auto 0;
+text-align: center;;}
+
+
+.sign-up-form h1 {
+    color: #1c8adb;
+    margin-bottom: 30px;
+}
+
+.input-box {border-radius: 20px;
+padding: 10px;
+margin: 10px 0;
+width: 80%;
+border: 1px solid #999;
+outline: none;}
+
+button {color: #fff;
+width: 100%;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+margin: 10px 0;
+border: none;
+outline: none;
+cursor: pointer;}
+
+.signup-btn {background-color: #E9DD8A;}
+
+.gmail-btn {background-color: #E9DD8A;}
+
+a {text-decoration: none;}
+
+hr {margin-top: 20px;
+width: 80%;}
+
+.or {background: #fff;
+width: 30px;
+margin: -19 auto 10px;}
+
+img {width: 100px;}
